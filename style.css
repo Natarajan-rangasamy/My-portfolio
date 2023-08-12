@@ -1,4 +1,24 @@
 .bod{
     background: black;
     color: white;
+    margin-bottom: 200px;
+}
+#top{
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+a{
+    padding: 8px;
+    transition: 0.5s linear;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#pic{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom:0px ;
 }

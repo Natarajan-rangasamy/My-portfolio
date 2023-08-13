@@ -1,24 +1,38 @@
-.bod{
-    background: black;
-    color: white;
-    margin-bottom: 200px;
+.bod {
+  background: black;
+  color: white;
+  margin-bottom: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
-#top{
-    display: flex;
-    justify-content: end;
-    padding: 5px;
+#top {
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+  transition: 0.5s ease-out;
 }
-a{
-    padding: 8px;
-    transition: 0.5s linear;
+a {
+  padding: 8px;
+  transition: 0.5s ease-out;
 }
-a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    transform: scale(1.1);
+a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-#pic{
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom:0px ;
+#pic {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+#about {
+  padding-left: 10px;
+  width: 80%;
+}
+hr {
+  padding: 0;
+  margin: 8px;
+}
+nav a{
+  content: '';
+  
 }

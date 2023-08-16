@@ -88,6 +88,7 @@ background-color: burlywood;
   gap: 25px;
   grid-template-columns: repeat(auto-fill, minmax(250px ,1fr));
   transition: .5s ease-in-out;
+  perspective: 500px;
 }
 #card{
   display: flex;
@@ -96,16 +97,19 @@ background-color: burlywood;
   text-align: center;
   flex-direction: column;
   margin: 18px;
+  width: 100%;
   height:200px;
   color: black;
   font-weight: 700;
   border: 1px solid white;
   border-radius: 5px;
-  transition: .5s ease-in-out;
+  transition: .8s ease-in-out;
   background: linear-gradient(45deg , rgb(218, 119, 119) ,rgb(20, 150, 159));
+  transform-style: preserve-3d;
   position: relative;
+
 }
- #card:hover{
+ #card:hover {
   box-shadow: 0px 0px 8px 8px rgb(105, 103, 103);
   transform: scale(1.1);
   transform: rotateY(180deg);
@@ -147,5 +151,20 @@ background-color: burlywood;
 .colleged{
   display: none;
   transition: 0.5s ease-in;
+}
+#back, #front{
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#back{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  color: white;
+  background: transparent;
+  transform: rotateY(180deg);
 }
 

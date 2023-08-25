@@ -9,19 +9,20 @@
     <style>
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 </style>
+<script src="https://kit.fontawesome.com/da1b20a82c.js" crossorigin="anonymous"></script>
   </head>
   <body class="bod">
     <nav id="top">
       <hr>
       <a>Home</a>
-      <a>About</a>
-      <a>Projects</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
       <!-- <a>Education</a> -->
-      <a>Skills</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
     <hr>
-    <div style="display: flex; justify-content: space-between;" >
+    <div id="home" style="display: flex; justify-content: space-between;" >
      <div style="position: relative; margin-left: 25px;padding-top: 10%;">
       <h1 style="margin-top: auto 0px;">
         Hi, I am Natarajan Rangasamy<br />
@@ -40,15 +41,15 @@
     </div>
     <h2> About Me</h2>
     <div id="about" >
-     <p>👋 Greetings! I'm Natarajan, a mechanical maestro who cracked the code to becoming a web virtuoso.<br>
+     <p>Greetings! I'm Natarajan, a mechanical maestro who cracked the code to becoming a web virtuoso.<br>
 
-      🔧 Armed with a degree in Mechanical Engineering from GCE Salem, Anna University, I've traded in my hard hat for a developer's cap, ready to architect digital wonders.<br>
+      Armed with a degree in Mechanical Engineering from GCE Salem, Anna University, I've traded in my hard hat for a developer's cap, ready to architect digital wonders.<br>
 
-      💻 My toolbox? It's a mix of HTML, CSS, and JavaScript wizardry. I'm all about weaving captivating tales through lines of code.<br>
+      My toolbox? It's a mix of HTML, CSS, and JavaScript wizardry. I'm all about weaving captivating tales through lines of code.<br>
 
-      🌐 Whether it's sculpting seamless user interfaces or engineering robust databases, I bridge the gap between imagination and functionality.<br>
+     Whether it's sculpting seamless user interfaces or engineering robust databases, I bridge the gap between imagination and functionality.<br>
 
-      🚀 A tech thrill-seeker, I'm addicted to the rush of mastering new languages and frameworks. In the fast-paced realm of development, I'm the hare, not the tortoise.<br>
+     A tech thrill-seeker, I'm addicted to the rush of mastering new languages and frameworks. In the fast-paced realm of development, I'm the hare, not the tortoise.<br>
 
       ✨ Join me in unraveling the symphony of logic and creativity, where engineering meets the artistry of the web.<br>
     </p> 
@@ -78,7 +79,7 @@
     <div id="projects">
       <h2>
         Projects
-      </h2>
+      <!-- </h2>
       <div id="container">
         <div id="card">
           <div id="front">
@@ -98,30 +99,147 @@
         </div>
         <div id="card">
           Others Skills
-        </div>
+        </div> -->
 
+
+        <h1 style="text-align: center;">React projects</h1>
+        <div class="container">
+          <div class="wrap">
+            <div class="desc">
+             <div class="exp">A simple face recgnition project which establishing my skills in React js , JavaScript, HTML 5, Css 3, and I even used some dependencies for styling the page such as Tachyons and this page will recognizes the face in the picture you given through your link. A cool AI language model named face detector from clarifai API gives us this fine service and for backend I used Node js and Express js for Database I used PSQL. Now you view the live demo of this project and Source code below.</div> 
+             <button><a href="">Live Demo</a></button>
+             <button><a href="">Source Code</a></button>
+            </div>
+            <div class="image">
+              <marquee behavior="" direction="" scrollamount="0">
+                <img class="pro-img" alt="project image" src="project-image\Screenshot (1).png " width="600px" height="auto">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (2).png" width="600px" height="auto">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (4).png" width="600px" height="auto">
+              </marquee>
+              
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="desc">
+              It's a weather App which gives us nice information of weather in a specified city it gives us many information such as wind speed , temperature of the city , humidity ,and many more .Here I used open weather API for Weather information and Basic HTML 5, CSS 3 and JavaScript for this project.Link for Source code and Live demo is given below.
+            </div>
+            <button><a href="">Live Demo</a></button>
+             <button><a href="">Source Code</a></button>
+            <div class="image">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (5).png" width="600px" height="auto">
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="desc">
+              It's Time for fun here is Simple Project for Rock paper scissors game which we all played in our school days it's a correct time to remind those golden days with this project play here and have some fun with your collegue.HTML 5 ,CSS3 and JavaScript is used for this project.Link for Source code and Live demo is given below.
+            </div>
+            <button><a href="">Live Demo</a></button>
+             <button><a href="">Source Code</a></button>
+            <div class="image">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (7).png" width="600px" height="auto">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (6).png" width="600px" height="auto">
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="desc">
+              A great App that will helps you when you go to shopping. With this app you can add the items in the list and when you purchased you can simply click on the name to strike it out .Javascript fuctions are used for creating child elements and HTML 5 for skeleton CSS 3 for styling.
+              Link for Source code and Live demo is given below.
+            </div>
+            <button><a href="">Live Demo</a></button>
+            <button><a href="">Source Code</a></button>
+            <div class="image">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (8).png" width="600px" height="auto">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (9).png" width="600px" height="auto">
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="desc">
+              Hello all, I think we watched the movie named 2.0 in Tamil it was released as Enthiran 2.0 with that inspiration i created a cool app which shows the version of chitti here we can play around this robo and all these robos are auto generated with the details we gave them. Here I used Reacts Js , HTML 5 and CSS 3 and even Tachyons for styling the page. Let's play around this cool app. Link for Source code and Live demo is given below.
+            </div>
+            <button><a href="">Live Demo</a></button>
+            <button><a href="">Source Code</a></button>
+            <div class="image">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (10).png" width="600px" height="auto">
+              <img class="pro-img" alt="project image" src="project-image\Screenshot (11).png" width="600px" height="auto">
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="desc"></div>
+            <div class="image"></div>
+          </div>
+          
+          
+        </div>
     </div>
     <div id="skills">
       <h2>
         Skills
       </h2>
-      What I use for Developing....
-  
+      What I am using for Developing....
+      <div id="skill-list">
+        <i class="fa-brands fa-java fa-2xl"></i>
+        <i class="fa-brands fa-square-js fa-2xl"></i>
+        <i class="fa-brands fa-html5 fa-2xl"></i>
+        <i class="fa-brands fa-css3-alt fa-2xl"></i>
+        <i class="fa-brands fa-react fa-2xl"></i>
+        <i class="fa-brands fa-node fa-2xl"></i>
+        <img src="project-image\icons8-postgresql-48.png" width="35px">
+      </div>
       </div>
     </div>
     <div id="contact">
        <h2>
         Contact
       </h2>
+      <div style="text-align: center;">
+        <button id="cta">CALL TO ACTION</button>
+       <P> [PUT YOUR CALL TO ACTION HERE]</P>
+      </div>
         <div id="bottom">
-
+          
+          <div class="left">
+           <span style="position: relative;
+           top: 30px;"> You can reach me out through....</span>
+            <div class="prior"><a style="text-decoration: underline;"><i class="fa-solid fa-phone fa-xl"></i> +91 9655887596.</a> 
+         <a><i class="fa-solid fa-at fa-xl"></i> natraj2431@gmail.com.</a></div>
+         <div class="social"><a href="https://wa.me/qr/MHP3NJZ4AMING1 " target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #069d4f;"></i></a>
+          <a href="https://t.me/Harish_shh" target="_blank"><i class="fa-solid fa-paper-plane fa-xl"
+            style="color: #8bb7fe;"></i></a>
+          <a href="https://www.instagram.com/harish_shh/" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: #cc3342;" ></i></a>
+          <a href="https://github.com/Natarajan-rangasamy" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #f6e9ea;"></i></a>
+          <a href="https://twitter.com/harish_shh" target="_blank"><i class="fa-brands fa-twitter fa-xl" style="color: #1b49ff;"></i></a>
+          <a href="https://www.linkedin.com/in/natarajan-rangasamy-a894051b5/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+        </div>
+        <div class="cv" style="position: relative; bottom: -120px;">
+          <button style="padding: 12px; color: #f5f5f5; background: #069d4f; border: none; outline: none; border-radius: 5px;"><i class="fa-solid fa-arrow-down fa-xl"></i>
+            <a href="" style="color: white;">Download my CV here</a></button>
+        </div>
+          </div>
+          
+          <div class="right">
+            <form>
+             
+             <div class="name"><input type="text" name="Name" placeholder="Your name here" required></div> 
+              
+             <div class="email"><input type="email" name="email" required placeholder="Your email"></div>
+             <textarea name="message" rows="6" placeholder="Your message"></textarea>
+             <div class="but"><input class="sub" type="submit"></div>
+            </div>
+            
+            </form>
+            
+          </div>
         </div>
     </div>
     </div>
     <footer>
       <div id="foot">
-        Developed by Natarajan<br> <i src="copyright-regular.svg"></i>
+        Developed by<span style="color: rgba(246, 228, 238, 0.6); font-weight: 900;margin-left:6px ;">Natarajan</span>
       </div>
+      <div id="icon">
+       <span style="margin-right: 12px;">2023</span><i style="margin-right: 12px;position: relative; bottom: -10px;"class="fa-regular fa-copyright fa-lg"></i> Copyrights reserved.
+      </div>
+      <a href="#home" style="position: relative; right: -35%; bottom:-30% ; color: rgb(93, 90, 90);"><i class="fa-solid fa-arrow-up fa-xl"></i> Back to top</a>
       
     </footer>
     <script type="text/javaScript" src="script.js" ></script>

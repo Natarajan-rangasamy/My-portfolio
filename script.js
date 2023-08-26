@@ -13,3 +13,10 @@
 //     var sch = document.getElementById("college");
 //     sch.classList.toggle("colleged");
 // }
+$(function() {
+    $('marquee').mouseover(function() {
+        $(this).attr('scrollamount',5);
+    }).mouseout(function() {
+         $(this).attr('scrollamount',0);
+    });
+});

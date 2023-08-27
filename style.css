@@ -369,7 +369,7 @@ i:hover{
   display: none;
 }
 .navigation{
-  display:none ;
+  display:none;
   background: rgb(236, 231, 231);
   position: fixed;
   right: 0;
@@ -380,6 +380,7 @@ i:hover{
 ul{
   padding: 0;
   margin-top: 35px;
+ 
 }
 li{
   padding-right: 10px;
@@ -392,12 +393,18 @@ li{
 li a{
   color: black;
 }
-.x-mar{
+.x-mar {
   position: relative;
   top: 5%;
   left:10%;
+  
+}
+.x-mar button{
   font-size: 20px;
   color: #e60c0c;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 @media only screen and (max-width:850px){
 

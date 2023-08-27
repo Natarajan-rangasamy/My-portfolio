@@ -13,12 +13,15 @@
   </head>
   <body class="bod">
     <div class="menu">
-      <button><i class="fa-solid fa-bars fa-2xl"></i>
+      <button onclick="opennav()"><i class="fa-solid fa-bars fa-2xl"></i>
       </button>
     </div>
     <div class="navigation">
       <div class="x-mar">
-        <i class="fa-solid fa-xmark fa-2xl"></i>
+        <button onclick="closenav()">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+       
         <ul>
           <li>
             <a href="#about">About</a>
@@ -298,6 +301,9 @@
       const form = document.forms['submit-to-google-sheet']
       const msg = document.getElementById("msg")
 
+      const navi = document.querySelector('.navigation')
+
+
 
       form.addEventListener('submit', e => {
         e.preventDefault()
@@ -313,6 +319,16 @@
           )
           .catch(error => console.error('Error!', error.message))
       })
+
+        function opennav(){
+
+          navi.style.display='block';
+          }
+
+          function closenav(){
+            navi.style.display = 'none';
+          }
+
     </script>
   </body>
 </html>

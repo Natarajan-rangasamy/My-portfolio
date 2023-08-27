@@ -20,3 +20,8 @@
 //          $(this).attr('scrollamount',0);
 //     });
 // });
+function open(){
+    var menu = document.querySelector(".menu");
+
+    
+}

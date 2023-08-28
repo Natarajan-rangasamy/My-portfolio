@@ -373,7 +373,7 @@ img {
   display: none;
 }
 .navigation {
-  display: block;
+  display: none;
   background: rgb(236, 231, 231);
   position: fixed;
   left: 0;

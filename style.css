@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -6,8 +6,8 @@ html{
 .bod {
   background: black;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 #top {
   display: flex;
@@ -15,7 +15,7 @@ html{
   padding: 5px;
   transition: 0.5s ease-out;
 }
-a{
+a {
   text-decoration: none;
 }
 a:hover {
@@ -32,24 +32,23 @@ a:hover {
   justify-content: center;
 }
 
-li{
+li {
   margin-left: 4px;
   padding: 8px;
- 
 }
 hr {
   padding: 0;
   margin: 8px;
 }
 nav a {
-  position:relative;
+  position: relative;
   margin: 8px;
   color: white;
   transition: 0.3s ease-out;
   text-decoration: none;
 }
-nav a::after{
-  content:'';
+nav a::after {
+  content: "";
   border-radius: 2px;
   width: 0;
   height: 3px;
@@ -57,10 +56,9 @@ nav a::after{
   position: absolute;
   bottom: -6px;
   left: 3px;
-
 }
- nav a:hover::after{
-  content:'';
+nav a:hover::after {
+  content: "";
   border-radius: 2px;
   width: 100%;
   height: 3px;
@@ -70,22 +68,21 @@ nav a::after{
   left: 3px;
   transition: 0.3s linear;
 }
-h2{
-padding-left: 6px;
-text-align: center;
-border-radius: 5px;
-transition:0.2s linear;
-
+h2 {
+  padding-left: 6px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s linear;
 }
-#container{
+#container {
   margin: 18px;
   display: grid;
   gap: 25px;
-  grid-template-columns: repeat(auto-fill, minmax(250px ,1fr));
-  transition: .5s ease-in-out;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  transition: 0.5s ease-in-out;
   perspective: 500px;
 }
-#card{
+#card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,24 +90,23 @@ transition:0.2s linear;
   flex-direction: column;
   margin: 18px;
   width: 100%;
-  height:200px;
+  height: 200px;
   color: black;
   font-weight: 700;
   border: 1px solid white;
   border-radius: 5px;
-  transition: .8s ease-in-out;
-  background: linear-gradient(45deg , rgb(218, 119, 119) ,rgb(20, 150, 159));
+  transition: 0.8s ease-in-out;
+  background: linear-gradient(45deg, rgb(218, 119, 119), rgb(20, 150, 159));
   transform-style: preserve-3d;
   position: relative;
-
 }
- #card:hover {
+#card:hover {
   box-shadow: 0px 0px 8px 8px rgb(105, 103, 103);
   transform: scale(1.1);
   transform: rotateY(180deg);
- }
+}
 
- #card button{
+#card button {
   position: absolute;
   bottom: 35px;
   font-size: 30px;
@@ -118,9 +114,8 @@ transition:0.2s linear;
   border: none;
   background: transparent;
   cursor: pointer;
-  
- }
- /* #education button{
+}
+/* #education button{
   border-radius: 10px;
   background: linear-gradient(38deg, rgba(196, 57, 57, 0.3),rgb(31, 40, 211));
   border: none;
@@ -133,13 +128,13 @@ transition:0.2s linear;
   transition: 0.5s ease-in;
  } */
 
- /* #education button:hover{
+/* #education button:hover{
   transform: scale(1.1);
   background: linear-gradient(38deg,rgb(31, 40, 211), rgba(196, 57, 57, 0.3));
   transition: 0.5s ease-in;
  }
   */
- /* .schoold {
+/* .schoold {
   display: none;
   transition: 0.5s ease-in;
  }
@@ -147,13 +142,14 @@ transition:0.2s linear;
   display: none;
   transition: 0.5s ease-in;
 } */
-#back, #front{
+#back,
+#front {
   position: absolute;
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-#back{
+#back {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,21 +159,21 @@ transition:0.2s linear;
   transform: rotateY(180deg);
 }
 
-#bottom{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 350px;
-    margin-top: 25px;
-    transition: transform 0.3s ease-in-out;
-    padding: 20px;
+#bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 350px;
+  margin-top: 25px;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
 }
 
-#bottom:hover{
+#bottom:hover {
   transform: translateY(-5px);
-  box-shadow:  0px 0px 8px 8px rgba(105, 103, 103, 0.5);
+  box-shadow: 0px 0px 8px 8px rgba(105, 103, 103, 0.5);
 }
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,25 +181,25 @@ footer{
   color: grey;
 }
 
-#foot{
+#foot {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 20vh;
   margin-bottom: -30px;
 }
-#icon{
+#icon {
   margin-top: -20px;
   display: flex;
 }
-.left{
+.left {
   display: flex;
   gap: 6px;
   width: 80%;
   flex-direction: column;
   z-index: 100;
 }
-.prior{
+.prior {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -211,21 +207,21 @@ footer{
   padding-top: 80px;
   position: relative;
 }
-.social{
+.social {
   position: relative;
   bottom: 120px;
 }
-i{
+i {
   position: relative;
   margin-top: 8px;
   margin-right: 15px;
   transition: transform 0.3s linear;
 }
-i:hover{
+i:hover {
   transform: translateY(-5px);
-  box-shadow:  5px 5px 10px 10px rgba(134, 1, 1, 0.8);
+  box-shadow: 5px 5px 10px 10px rgba(134, 1, 1, 0.8);
 }
-#cta{
+#cta {
   padding: 18px;
   border-radius: 3px;
   outline: none;
@@ -235,263 +231,264 @@ i:hover{
   font-weight: 900;
   font-size: 1em;
   transition: 0.4s linear;
-  
 }
 
-#cta:hover{
+#cta:hover {
   cursor: pointer;
   background: rgb(110, 127, 115);
   color: rgb(193, 183, 215);
 }
-.right
-{
+.right {
   display: flex;
   flex-direction: column;
   width: 100%;
-  }
-  input,textarea{
-    width: 50%;
-    padding: 12px;
-    margin: 12px;
-    background: rgb(59, 52, 52);
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    color: white;
-  }
-  .sub{
-    font-weight: bolder;
-    margin-top: 0px;
-    background: rgb(157, 27, 27);
-    color: white;
-    cursor: pointer;
-    width: 20%;
-  }
-  .sub:active{
-    background: rgb(220, 72, 72);
-    padding-top: 15px;
-    padding-left: 18px;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    
-  }
-  .wrap{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-  }
-  .desc{
-    display: flex;
-    flex-direction: column;
-    margin: auto 10px;
-    width: 50%;
-    padding-right: 30px;
-  }
-  .image{
-    border: 3px solid grey;
-    width: 50%;
-    height: 70%;
-    padding: 15px;
-    margin: 15px;
-    transition: 0.5s ease-out;
-  }
-  .image:hover{
-    box-shadow:  0 0 10px 10px rgba(0, 140, 186, 0.5);
-    cursor: pointer;
-  }
-  img{
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  .exp{
-    margin-left: 5%;
-    width: 100%;
-    padding: 10px;
-    padding-right: 15px;
-  }
-  .desc button{
-    margin-left:5%;
-    padding: 15px;
-    width: 40%;
-    margin-top: 15px;
-    border-radius: 5px;
-    color: aqua;
-    background: rgb(158, 158, 239);
-    font-weight: 700;
-    transition: 0.4s linear;
-  }
-  .desc button:hover{
-    cursor: pointer;
-    background: aqua;
-    color: rgb(158, 158, 239);
-  }
-  .desc button:active{
-    padding: 20px;
-  }
-  .cv{
-    position: relative; bottom: -50px;
-  }
-  .cv button{
-    padding: 12px; color: #f5f5f5; background: #069d4f; border: none; outline: none; border-radius: 5px;
-  }
-  .about{
-    width:500px;
-    height: auto;
-    padding: 20px; box-shadow: 0px 5px 10px 10px rgba(215, 45, 139, 0.6) ;
-  }
-  .title{
-    text-align: center; text-transform: uppercase;font-size: 1.8em;
-    font-weight: bold;
-  }
-  .first{
-    text-align: center;
-  }
-.soc-reach{
+}
+input,
+textarea {
+  width: 50%;
+  padding: 12px;
+  margin: 12px;
+  background: rgb(59, 52, 52);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+}
+.sub {
+  font-weight: bolder;
+  margin-top: 0px;
+  background: rgb(157, 27, 27);
+  color: white;
+  cursor: pointer;
+  width: 20%;
+}
+.sub:active {
+  background: rgb(220, 72, 72);
+  padding-top: 15px;
+  padding-left: 18px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+  width: 50%;
+  padding-right: 30px;
+}
+.image {
+  border: 3px solid grey;
+  width: 50%;
+  height: 70%;
+  padding: 15px;
+  margin: 15px;
+  transition: 0.5s ease-out;
+}
+.image:hover {
+  box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.exp {
+  margin-left: 5%;
+  width: 100%;
+  padding: 10px;
+  padding-right: 15px;
+}
+.desc button {
+  margin-left: 5%;
+  padding: 15px;
+  width: 40%;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: aqua;
+  background: rgb(158, 158, 239);
+  font-weight: 700;
+  transition: 0.4s linear;
+}
+.desc button:hover {
+  cursor: pointer;
+  background: aqua;
+  color: rgb(158, 158, 239);
+}
+.desc button:active {
+  padding: 20px;
+}
+.cv {
   position: relative;
-   top: 30px;
+  bottom: -50px;
 }
-#msg{
-  color: rgb(0, 211, 21); margin-left: 15px;
+.cv button {
+  padding: 12px;
+  color: #f5f5f5;
+  background: #069d4f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
-.arr{
-    position: relative;
-    bottom: 70px;
-    left: 400px;
-     
+.about {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0px 5px 10px 10px rgba(215, 45, 139, 0.6);
 }
-.arr a{
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.first {
+  text-align: center;
+}
+.soc-reach {
+  position: relative;
+  top: 30px;
+}
+#msg {
+  color: rgb(0, 211, 21);
+  margin-left: 15px;
+}
+.arr {
+  position: relative;
+  bottom: 70px;
+  left: 400px;
+}
+.arr a {
   color: rgb(251, 174, 238);
 }
-.menu{
+.menu {
   display: none;
 }
-.navigation{
-  display:none;
+.navigation {
+  display: block;
   background: rgb(236, 231, 231);
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   width: 40%;
   z-index: 10000;
 }
-ul{
+ul {
   padding: 0;
   margin-top: 35px;
- 
+  width: 200px;
 }
-li{
+li {
   padding-right: 10px;
   padding-left: 0px;
-  margin-right:10px ;
+  margin-right: 10px;
   margin-left: 0;
-  border-bottom:2px solid rgb(49, 171, 233) ;
+  border-bottom: 2px solid rgb(49, 171, 233);
   list-style: none;
 }
-li a{
+li a {
   color: black;
 }
 .x-mar {
-  position: relative;
+  position: absolute;
   top: 5%;
-  left:10%;
-  
+  left: 10%;
 }
-.x-mar button{
+.x-mar button {
+  position: relative;
+  left: 90%;
   font-size: 20px;
   color: #e60c0c;
   border: none;
   outline: none;
   background: transparent;
 }
-@media only screen and (max-width:850px){
-
-  .bod{
-    background:rgb(10, 10, 61);
+@media only screen and (max-width: 850px) {
+  .bod {
+    background: rgb(10, 10, 61);
   }
-  .desc{
+  .desc {
     width: 90%;
   }
-  .desc button{
+  .desc button {
     width: 25%;
   }
-  .detail{
+  .detail {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
   }
-  .wrap{
+  .wrap {
     display: flex;
     flex-direction: column;
   }
-  .image{
-   margin: 0;
+  .image {
+    margin: 0;
     width: 100%;
   }
-  .cv{
+  .cv {
     position: relative;
     left: 400px;
     top: -150px;
   }
-  
-  #bottom{
+
+  #bottom {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
-  .arr{
+  .arr {
     position: relative;
     left: 300px;
   }
-  #top{
+  #top {
     display: none;
-   }
-   .menu{
+  }
+  .menu {
     display: flex;
     justify-content: end;
     padding: 15px;
-   }
-   .menu button{
+  }
+  .menu button {
     background: transparent;
     color: rgb(255, 246, 246);
     padding: 10px;
     border: none;
     outline: none;
     font-size: large;
-   }
+  }
 
-   .menu button:hover{
+  .menu button:hover {
     cursor: pointer;
-   }
-   .menu button:active{
-    transform:rotate(180deg);
-   }
+  }
+  .menu button:active {
+    transform: rotate(180deg);
+  }
 }
-  @media only screen and (max-width:500px ) {
-    .desc button{
-      width: 30%;
-      font-size: 10px;
-    }
-    #about{
-      margin-left: 10%;
-    }
-    .cv{
-      position: static;
-      margin: 10px;
-      font-size:10px;
-    }
-   .arr{
+@media only screen and (max-width: 500px) {
+  .desc button {
+    width: 30%;
+    font-size: 10px;
+  }
+  #about {
+    margin-left: 10%;
+  }
+  .cv {
+    position: static;
+    margin: 10px;
+    font-size: 10px;
+  }
+  .arr {
     position: relative;
     left: 50px;
     bottom: 200px;
-   }
-   
   }
-
- 
-
-
-
+}

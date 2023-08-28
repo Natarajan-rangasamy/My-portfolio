@@ -8,6 +8,8 @@ html {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 #top {
   display: flex;
@@ -371,6 +373,8 @@ img {
 }
 .menu {
   display: none;
+  position: sticky;
+  top: 10px;
 }
 .navigation {
   display: none;
@@ -399,13 +403,13 @@ li a {
   color: black;
 }
 .x-mar {
-  position: absolute;
+  position: relative;
   top: 5%;
   left: 10%;
 }
 .x-mar button {
   position: relative;
-  left: 90%;
+  left: 60%;
   font-size: 20px;
   color: #e60c0c;
   border: none;
@@ -456,6 +460,10 @@ li a {
     display: flex;
     justify-content: end;
     padding: 15px;
+    border-bottom: 3px solid grey;
+    margin-top: 0;
+    z-index: 1000;
+    background: rgb(1, 25, 98);
   }
   .menu button {
     background: transparent;
@@ -465,13 +473,17 @@ li a {
     outline: none;
     font-size: large;
   }
-
+hr{
+  display: none;
+  z-index: 100;
+}
   .menu button:hover {
     cursor: pointer;
   }
   .menu button:active {
     transform: rotate(180deg);
   }
+  
 }
 @media only screen and (max-width: 500px) {
   .desc button {

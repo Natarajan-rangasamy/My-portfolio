@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .bod {
@@ -426,6 +427,7 @@ li a{
     flex-direction: column;
   }
   .image{
+   margin: 0;
     width: 100%;
   }
   .cv{
@@ -443,26 +445,7 @@ li a{
     position: relative;
     left: 300px;
   }
-}
-  @media only screen and (max-width:500px ) {
-    .desc button{
-      width: 30%;
-      font-size: 10px;
-    }
-    #about{
-      margin-left: 10%;
-    }
-    .cv{
-      position: static;
-      margin: 10px;
-      font-size:10px;
-    }
-   .arr{
-    position: relative;
-    left: 50px;
-    bottom: 200px;
-   }
-   #top{
+  #top{
     display: none;
    }
    .menu{
@@ -485,6 +468,26 @@ li a{
    .menu button:active{
     transform:rotate(180deg);
    }
+}
+  @media only screen and (max-width:500px ) {
+    .desc button{
+      width: 30%;
+      font-size: 10px;
+    }
+    #about{
+      margin-left: 10%;
+    }
+    .cv{
+      position: static;
+      margin: 10px;
+      font-size:10px;
+    }
+   .arr{
+    position: relative;
+    left: 50px;
+    bottom: 200px;
+   }
+   
   }
 
  

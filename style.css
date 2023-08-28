@@ -10,6 +10,7 @@ html {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 #top {
   display: flex;
@@ -384,14 +385,16 @@ img {
   top: 0;
   bottom: 0;
   width: 40%;
-  z-index: 10000;
+  z-index: 1000000;
 }
 ul {
+  position: fixed;
+  bottom: 300px;
   padding: 0;
-  margin-top: 35px;
-  width: 200px;
+  width: 100px;
 }
 li {
+  position: static;
   padding-right: 10px;
   padding-left: 0px;
   margin-right: 10px;
@@ -415,6 +418,9 @@ li a {
   border: none;
   outline: none;
   background: transparent;
+}
+.x-mar button:hover{
+  cursor: pointer;
 }
 @media only screen and (max-width: 850px) {
   .bod {

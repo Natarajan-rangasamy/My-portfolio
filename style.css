@@ -377,6 +377,7 @@ i:hover{
   top: 0;
   bottom: 0;
   width: 40%;
+  z-index: 10000;
 }
 ul{
   padding: 0;
